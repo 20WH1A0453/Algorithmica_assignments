@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+    float p,a;
+    int n;
+    cin>>p>>n;
+    a=p*pow(1.04,n);
+    cout<<fixed<<setprecision(2)<<a;
+}
