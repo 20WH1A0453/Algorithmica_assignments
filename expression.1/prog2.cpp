@@ -8,5 +8,5 @@ int main() {
     cout<<"Enter your name"<<"\n";
     cin>>name;
     
-    cout<<name<<"\n"<<"Hello";
+    cout<<"Hello";
 }
