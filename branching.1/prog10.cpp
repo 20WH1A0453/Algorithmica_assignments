@@ -10,7 +10,7 @@ int main(){
 	else if(wl>=590 && wl<=619)cout<<"Orange";
 	else if(wl>=620 && wl<=750)cout<<"Red";
 	else if(wl<380)cout<<"wavelength if out of visible spectrum1";
-	else cout<<"wavelength if out of visible spectrum1";
+	else cout<<"wavelength if out of visible spectrum";
 
 
 }
