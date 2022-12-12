@@ -2,10 +2,12 @@
 #include<math.h>
 using namespace std;
 int main(){
-	int x,guess;
+	int x;
+	float guess;
 	cin>>x;
 	guess=x/2;
-    while((guess * guess - x) >= pow(10,-12)){
-    	 guess=guess-(pow(guess,2)- x)/(2*guess);
+	double threshold = pow(10, -7);
+    while(abs(guess*guess-x)>= threshold){
+    	guess=(guess+(int)x/guess)/2;
     }cout<<guess;        
 }
