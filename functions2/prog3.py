@@ -1,12 +1,8 @@
 #decimal to any radix
 def base10_to_Arbitrary(num):
-    for i in range(1,num):
-        num=num//i
-        print(num%base)
-
-    #if(num>=1):
-        #base10_to_Arbitrary(num // base)
-        #print(num%base,end=' ')
+    if(num>=1):
+        base10_to_Arbitrary(num // base)
+        print(num%base,end=' ')
 
 
 #any radix to decimal
