@@ -19,7 +19,7 @@ def convertBase(num):
         print(base10_to_Arbitrary(num))
         print(arbitrary_to_base10(num))
     else:
-        print('error')
+        print('Base is out of range ')
 
 num=int(input('Enter number'))
 base=int(input('Enter base'))
