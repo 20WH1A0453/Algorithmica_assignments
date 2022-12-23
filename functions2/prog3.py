@@ -1,12 +1,13 @@
 #decimal to any radix
 def base10_to_Arbitrary(num):
-    num1,p=0,1
+    rev_num,p=0,1
     while(num>=1):
         rem=num%base
-        num1=num1+(rem*p)
+        rev_num=rev_num+rem*p
         num=num//2
-        p*=10
-    return num1
+        p=p*10
+    return rev_num
+
 
 #any radix to decimal
 def arbitrary_to_base10(num):
