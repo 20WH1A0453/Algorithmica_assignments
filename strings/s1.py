@@ -1,9 +1,14 @@
 def removeMysteryLength(str):
-    for i in range(1,len(str)):
-        if(len(str)<=9): #if length of string is one digit
-            return str[0:len(str)-i]
-        elif(len(str)<=99): #if length of string is two digits
-            return str[0:len(str)-i-1]
-str=input("string")
-print(removeMysteryLength(str))
+    prev=0
+    size=""
+    while True:
+        l=len(str)
+        current=int(str[-1])
+        size=current*10 +prev
+        str=str[:l-1]
+        if(size==l-1):
+            return str
+        prev=current
 
+str=input("Enter string")
+print(removeMysteryLength(str))
